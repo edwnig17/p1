@@ -278,3 +278,6 @@ document.addEventListener('mousemove', (e) => {
         layer.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     });
 });
+document.getElementById("storyButton").addEventListener("click", () => {
+    document.getElementById("story").classList.toggle("hidden");
+});

@@ -393,3 +393,104 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.contact {
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border-top: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-item {
+    max-width: 400px;
+    text-align: center;
+}
+
+.contact-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.contact-item p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+footer {
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 2px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
+}
+
+
+
+.instagram-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.instagram-button .btn-ig {
+    display: inline-flex;
+    align-items: center;
+    background-color: #E1306C; 
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 50px; 
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.instagram-button .btn-ig img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+   
+}
+
+.instagram-button .btn-ig:hover {
+    background-color: #C11C5A; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); 
+}
+
+.instagram-button .btn-ig:active {
+    background-color: #9e1b4b; 
+    transform: scale(0.98); 
+}

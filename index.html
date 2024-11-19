@@ -7,26 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <div class="parallax-container">
         <div class="parallax-layer" style="background-image: url('img/logo.jpeg');"></div>
         <div class="parallax-layer" style="background-image: url('img/tamal.jpeg');"></div>
         <div class="parallax-layer" style="background-image: url('img/logo-with-tamales.jpeg');"></div>
     </div>
-    
-    
-    
+
     <div class="content">
         <div class="container">
             <section class="hero">
                 <div class="hero-content">
                     <h1>La Boquilla</h1>
-                    <p>Más de 40 años de tradición en San Vicente de Chucuri</p>
+                    <p>Más de 40 años de tradición en San Vicente de Chucurí</p>
                     <button id="storyButton" class="btn">Nuestra Historia</button>
                 </div>
             </section>
 
-            <div id="story" class="story">
+            <div id="story" class="story hidden">
                 <h2>La Historia de La Boquilla</h2>
                 <p>Fundada en 1980 por la familia gomez, La Boquilla comenzó como un pequeño puesto esquinero de San Vicente de Chucuri.  Doña Graciela y Don Salomon, con su imaginacion y berraquera hicieron de un negocio pequeño a  un emblema de la comunidad chucureña, pronto se ganaron el corazón (y el paladar) de la comunidad.</p>
                 <p>A lo largo de los años, La Boquilla se ha convertido en un ícono gastronómico de esta tierra, manteniendo viva la tradición culinaria chucureña. Hoy, la segunda generación de la familia gomez continúa sirviendo los mismos sabores auténticos que han deleitado a visitantes y locales por más de cuatro décadas.</p>
@@ -43,7 +40,7 @@
                 <p>Domina la cocina de La Boquilla y conquista paladares</p>
                 <div class="game-container">
                     <button id="startGameButton" class="btn">¡A Cocinar con Pasión!</button>
-                    <div id="gameArea" style="display: none;">
+                    <div id="gameArea" class="hidden">
                         <div class="game-stats">
                             <span>Platos: <span id="score">0</span></span>
                             <span>Tiempo: <span id="timeLeft">60</span>s</span>
@@ -56,7 +53,7 @@
                         </div>
                         <div class="game-buttons" id="gameButtons"></div>
                     </div>
-                    <div id="gameOver" style="display: none;">
+                    <div id="gameOver" class="hidden">
                         <h3>¡Fin del Turno!</h3>
                         <p>Platos Servidos: <span id="finalScore"></span></p>
                         <p>Satisfacción Final: <span id="finalSatisfaction"></span>%</p>
@@ -64,8 +61,38 @@
                     </div>
                 </div>
             </section>
+
+            <section class="contact">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Visítanos</h3>
+                        <p>San Vicente de Chucurí, Santander, Colombia</p>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.275092930674!2d-73.40557896977539!3d6.878238302004857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e682bd0df118727%3A0x573c117e65219da8!2sLa%20Boquilla%2C%20Cl.%2013%20%2311A%2001%2C%20San%20Vicente%20de%20Chucur%C3%AD%2C%20Santander%2C%20Colombia!5e0!3m2!1ses-419!2sco!4v1700414390855!5m2!1ses-419!2sco" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Botón de Instagram -->
+                <div class="instagram-button">
+                    <a href="https://www.instagram.com/laboquilla.chorizos" target="_blank" class="btn-ig">
+                        <img src="img/ig.jpg" alt="Instagram Logo"> Visítanos en Instagram
+                    </a>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 La Boquilla. Todos los derechos reservados. Diseñado con ❤️ en San Vicente de Chucurí.</p>
+            </footer>
         </div>
     </div>
 
     <script src="main.js"></script>
 </body>
+</html>
