@@ -250,7 +250,7 @@ menuItems.forEach(item => {
 window.addEventListener('scroll', () => {
     const scrollPosition = window.pageYOffset;
     document.querySelectorAll('.parallax-layer').forEach((layer, index) => {
-        const speed = (index + 1) * 0.5;
+        const speed = (index + 1) * 0.1;
         layer.style.transform = `translateY(${scrollPosition * speed}px)`;
     });
 });
