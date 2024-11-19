@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boquilla - Experiencia Gastronómica Interactiva</title>
+    <link rel="stylesheet" href="css_styles.css">
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax-layer" style="background-image: url('img/logo.jpeg');"></div>
+        <div class="parallax-layer" style="background-image: url('img/tamal.jpeg'); transform: translateY(100%);"></div>
+        <div class="parallax-layer" style="background-image: url('img/logo-with-tamales.jpeg'); transform: translateY(200%);"></div>
+    </div>
+    
+    <div class="content">
+        <div class="container">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>La Boquilla</h1>
+                    <p>Más de 40 años de tradición en San Vicente de Chucuri</p>
+                    <button id="storyButton" class="btn">Nuestra Historia</button>
+                </div>
+            </section>
+
+            <div id="story" class="story">
+                <h2>La Historia de La Boquilla</h2>
+                <p>Fundada en 1980 por la familia gomez, La Boquilla comenzó como un pequeño puesto esquinero de San Vicente de Chucuri.  Doña Graciela y Don Salomon, con su imaginacion y berraquera hicieron de un negocio pequeño a  un emblema de la comunidad chucureña, pronto se ganaron el corazón (y el paladar) de la comunidad.</p>
+                <p>A lo largo de los años, La Boquilla se ha convertido en un ícono gastronómico de esta tierra, manteniendo viva la tradición culinaria chucureña. Hoy, la segunda generación de la familia gomez continúa sirviendo los mismos sabores auténticos que han deleitado a visitantes y locales por más de cuatro décadas.</p>
+                <p>Nuestro compromiso con la calidad y la autenticidad nos ha permitido crecer, pero nunca olvidamos nuestras raíces. Cada plato que servimos es un homenaje a la rica historia culinaria de San Vicente de Chucuri y a las generaciones de cocineros que han perfeccionado estas recetas.</p>
+            </div>
+
+            <section class="menu">
+                <h2>Nuestro Festín de Sabores</h2>
+                <div class="menu-grid" id="menuGrid"></div>
+            </section>
+
+            <section class="game-section">
+                <h2>¡Conviértete en Chef Estrella!</h2>
+                <p>Domina la cocina de La Boquilla y conquista paladares</p>
+                <div class="game-container">
+                    <button id="startGameButton" class="btn">¡A Cocinar con Pasión!</button>
+                    <div id="gameArea" style="display: none;">
+                        <div class="game-stats">
+                            <span>Platos: <span id="score">0</span></span>
+                            <span>Tiempo: <span id="timeLeft">60</span>s</span>
+                            <span>Satisfacción: <span id="satisfaction">100</span>%</span>
+                            <span>Combo: x<span id="combo">0</span></span>
+                        </div>
+                        <div class="orders">
+                            <h3>Pedidos Pendientes:</h3>
+                            <div id="ordersList"></div>
+                        </div>
+                        <div class="game-buttons" id="gameButtons"></div>
+                    </div>
+                    <div id="gameOver" style="display: none;">
+                        <h3>¡Fin del Turno!</h3>
+                        <p>Platos Servidos: <span id="finalScore"></span></p>
+                        <p>Satisfacción Final: <span id="finalSatisfaction"></span>%</p>
+                        <button id="restartGameButton" class="btn">¡Otro Turno de Sabor!</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js_script (1).js"></script>
+</body>
